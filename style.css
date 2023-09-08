@@ -69,13 +69,13 @@ input{
 #main{
     grid-area: main;
     display: grid;
-    grid-template-columns: 750px 1fr;
+    grid-template-columns: 3fr 1fr;
     background-color: #E1E6F0;
 }
 #mainSection{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
-    grid-template-rows: repeat(auto-fit, minmax(100px, 160px));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 350px));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 160px));
     gap: 10px;
     padding: 20px;
 }
@@ -103,8 +103,10 @@ h2{
 }
 #articlesDiv{
     display: grid;
+    justify-content: flex-end;
     grid-template-rows: repeat(2, 245px);
     gap: 30px;
+    padding-right: 50px;
     
 }
 .articles{
@@ -129,12 +131,11 @@ h2{
     padding: 10px;
 }
 #aside{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-area: aside;
     background-color: #3098D9;
-    align-items:flex-start;
-    justify-content: center;
-    padding-bottom: 100px;
+    justify-content: flex-start;
 }
 aside h2{
     color: white;
@@ -146,6 +147,7 @@ aside h2{
     display: flex;
     color: white;
     padding-left: 20px;
+    padding-top: 10px;
     margin: 10px;
 }
 .asideItems h2{
@@ -155,4 +157,7 @@ aside h2{
     color: white;
     font-size: 1.2rem;
     padding-left: 5px;
+}
+#extras{
+    padding-top: 80px;
 }
